@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public class Incident {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String type; // "BURACO", "ASSALTO", "ILUMINACAO"
+    private TypeIncidents type; // Criar um ENUM para os incidentes (BURACO, ASSALTO, ILUMINACAO...)
     private String description;
     private Double latitude;
     private Double longitude;
